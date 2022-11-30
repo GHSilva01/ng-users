@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # desafio-tecnico
 >>>>>>> d44b8bc7928290c9d70b0e2e9fe1d5bb7bf2e4c2
+=======
+# ng-users
+>>>>>>> dd8c2b59aa0059b208d9435fd8949901b881106d
