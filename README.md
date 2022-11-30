@@ -1,35 +1,67 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Frontend
+<h1 align="center">
+<br />
+Ng-Users
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+<br />
 
-## Development server
+## 🚀 Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Aplicação Frontend e Backend para cadastro de usuários.
+CRUD de Usuários.
 
-## Code scaffolding
+- ✔️ Angular
+- ✔️ Reactive Forms
+- ✔️ RxJS
+- ✔️ HTML, CSS
+- ✔️ Angular Material
+- ✔️ C# .Net Core 6.0 (API)
+- ✔️ SQL Server (Banco de Dados)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<br />
 
-## Build
+## ⚙️ Executando ambiente de desenvolvimento
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<strong> Executando a API </strong>
 
-## Running unit tests
+Primeiro de tudo, abra o <a href="https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms-19?view=sql-server-ver16">
+SQL Server 2019 </a> e certifique que esteja funcionando normalmente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Segundo, descompacte o arquivo "UserAPI.zip" e abra usando o <a href="https://visualstudio.microsoft.com/pt-br/downloads/"> Visual Studio 2022 </a>
 
-## Running end-to-end tests
+Logo após isso, acesse o arquivo "appsettings.json" e altere a Connection String da API igual ao nome que está presente no seu banco de dados.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Exemplo:
 
-## Further help
+![exemplo1](https://user-images.githubusercontent.com/69880923/204717352-d1fa49a6-fa37-4f35-8420-46a776702b37.png)
+![exemplo2](https://user-images.githubusercontent.com/69880923/204717365-d249c413-acf0-4bfa-b858-817924374c27.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# desafio-tecnico
->>>>>>> d44b8bc7928290c9d70b0e2e9fe1d5bb7bf2e4c2
-=======
-# ng-users
->>>>>>> dd8c2b59aa0059b208d9435fd8949901b881106d
+<strong>Feito isso, conecte o banco de dados e execute o comando via terminal NuGet para prosseguir</strong>
+```
+Update-database
+```
+
+E execute a API.
+
+<strong> Executando o Projeto Frontend </strong>
+
+Clone o projeto e acesse o diretório via terminal para prosseguir
+
+
+<span>Instalando as dependências do projeto</span>
+
+```
+npm install
+```
+
+<br/>
+
+<span>Executando projeto</span>
+
+```
+npm start
+```
+
+<br />
+
+
