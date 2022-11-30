@@ -1,0 +1,67 @@
+<mat-card>
+    <mat-card-title>Novo Usuário</mat-card-title>
+    <mat-stepper linear #stepper>
+        <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Vamos começar?</ng-template>
+            <mat-form-field appearance="fill">
+              <mat-label>Nome</mat-label>
+              <input matInput formControlName="name" name="name" placeholder="Nome completo" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>E-mail</mat-label>
+              <input matInput formControlName="email" name="email" placeholder="E-mail" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>CPF (Apenas Números)</mat-label>
+              <input matInput formControlName="cpf" name="cpf" placeholder="CPF" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Renda Principal (Apenas Números)</mat-label>
+              <input matInput formControlName="renda" name="renda" placeholder="Renda" required>
+            </mat-form-field>
+            <div>
+              <button mat-raised-button matStepperNext>Próximo</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Me fale mais sobre você</ng-template>
+            <mat-form-field appearance="fill">
+              <mat-label>Data de Nascimento</mat-label>
+              <input matInput formControlName="dtNasc" mask="00/00/0000" name="dtNasc" placeholder="Data de Nascimento"
+                     required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Celular</mat-label>
+              <input matInput formControlName="phone" prefix="+55 " mask="(00) 00000-0000" name="phone" placeholder="Telefone"
+                     required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Profissão</mat-label>
+              <mat-select formControlName="job" name="job" placeholder="Profissão">
+                <mat-option [value]="job"  matInput *ngFor="let job of jobs">{{job}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <div>
+              <button mat-raised-button matStepperPrevious>Voltar</button>
+              <button mat-raised-button matStepperNext>Próximo</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Pronto!</ng-template>
+          <p>Aperte para confirmar!</p>
+          <div>
+            <button mat-raised-button matStepperPrevious>Voltar</button>
+            <button mat-raised-button (click)="createUser()" color="primary">Confirmar!</button>
+          </div>
+        </mat-step>
+      </mat-stepper>
+
+</mat-card>
+
+
+

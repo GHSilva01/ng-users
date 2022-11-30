@@ -1,0 +1,19 @@
+.home .title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-left: 15px;
+    
+}
+
+
+.home .subtitle {
+    font-size: 1.1rem;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+button {
+    margin: 20px 15px 0px 0px;
+}
